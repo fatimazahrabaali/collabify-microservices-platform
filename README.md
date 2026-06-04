@@ -1,9 +1,9 @@
 # Collabify – Plateforme Microservices
-Présentation du projet
+##Présentation du projet
 
 Collabify est une application de gestion de projets et de tâches collaboratives développée avec une architecture microservices basée sur Spring Boot et Spring Cloud.
 
-Ce projet démontre :
+##Ce projet démontre :
 
 la décomposition en microservices
 la découverte de services (Eureka)
@@ -11,19 +11,19 @@ la gestion des routes via API Gateway
 la séparation frontend / backend
 la conteneurisation avec Docker
 l’intégration CI/CD avec GitHub Actions
- Architecture du système
+## Architecture du système
 
 L’application est composée de plusieurs modules :
 
-🔹 Microservices Backend
+### Microservices Backend
 API Gateway : point d’entrée unique de l’application
 Discovery Service (Eureka Server) : registre des services
 Event Service : gestion des événements
 Project Service : gestion des projets
 Task Service : gestion des tâches
-🔹 Backend principal (ancien module)
+### Backend principal (ancien module)
 backend_Gl : backend monolithique contenant la logique principale (authentification et modules de base)
-🔹 Frontend
+### Frontend
 Application React (Vite) permettant :
 authentification (login / register)
 tableau de bord
@@ -31,7 +31,7 @@ gestion des projets
 gestion des tâches
 gestion des membres
 paramètres utilisateur
-- Technologies utilisées
+## Technologies utilisées
 Backend
 Java 17
 Spring Boot
@@ -45,11 +45,11 @@ CSS
 DevOps
 Docker & Docker Compose
 GitHub Actions (CI/CD)
-- Architecture Docker
+##  Architecture Docker
 
 Le projet est conteneurisé avec Docker.
 
-Les services incluent :
+###Les services incluent :
 
 Eureka Server
 API Gateway
@@ -57,7 +57,7 @@ Event Service
 Project Service
 Task Service
 Frontend React
-- Comment exécuter le projet
+##  Comment exécuter le projet
 1) Cloner le projet
 git clone https://github.com/fatimazahrabaali/collabify-microservices-platform.git
 cd collabify-microservices-platform
@@ -65,12 +65,12 @@ cd collabify-microservices-platform
 
 Assurez-vous d’avoir Java 17 et Maven installés.
 
-Démarrer Eureka :
+### Démarrer Eureka :
 
 cd discovery-service
 mvn spring-boot:run
 
-Puis lancer les autres services :
+###Puis lancer les autres services :
 
 api-gateway
 event-service
@@ -81,7 +81,7 @@ cd frontend_Gl
 npm install
 npm run dev
 
-Le frontend sera accessible sur :
+## Le frontend sera accessible sur :
 
 http://localhost:5173
 4) (Optionnel) Lancer avec Docker
@@ -102,7 +102,7 @@ compilation automatique
 tests
 validation du build
 
-Fichier concerné :
+# Fichier concerné :
 
 .github/workflows/ci.yml
 📁 Structure du projet
@@ -118,7 +118,7 @@ collabify-microservices-platform/
 ├── docker-compose.yml
 ├── docs/figma/
 └── .github/workflows/
-- Fonctionnalités
+##  Fonctionnalités
 
 ✔ Architecture microservices
 ✔ Service Discovery (Eureka)
@@ -128,14 +128,14 @@ collabify-microservices-platform/
 ✔ Conteneurisation Docker
 ✔ Pipeline CI/CD
 
-👨‍🎓 Contexte académique
+## Contexte académique
 
 Ce projet a été réalisé dans un cadre académique afin de démontrer :
 
 la conception d’une architecture distribuée
 la communication entre microservices
 les pratiques DevOps modernes
-⭐ Remarques importantes
+## Remarques importantes
 
 Pour exécuter correctement le projet :
 
@@ -143,4 +143,4 @@ Lancer Eureka en premier
 Lancer API Gateway
 Lancer les microservices
 Lancer le frontend
-🚀 Fin
+#  Fin
