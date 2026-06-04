@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation Confirmée</title>
+</head>
+<body>
+    <h2>✅ Réservation effectuée avec succès !</h2>
+    <p>Bonjour <strong th:text="${reservation.nomDemandeur}"></strong>,</p>
+    <p>Type : <strong th:text="${reservation.typeReservation}"></strong></p>
+    <p>Demi-journée : <strong th:text="${reservation.demiJournee}"></strong></p>
+    <p>Durée : <strong th:text="${duree}"></strong> heure(s)</p>
+    <a href="/">Nouvelle réservation</a>
+</body>
+</html>

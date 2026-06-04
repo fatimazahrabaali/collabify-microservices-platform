@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation Refusée</title>
+</head>
+<body>
+    <h2>❌ Réservation refusée</h2>
+    <p>Bonjour <strong th:text="${reservation.nomDemandeur}"></strong>,</p>
+    <p>Durée invalide : <strong th:text="${duree}"></strong> heure(s) (max 3h autorisées).</p>
+    <a href="/">Réessayer</a>
+</body>
+</html>
