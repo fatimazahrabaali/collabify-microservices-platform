@@ -1,9 +1,9 @@
 # Collabify – Plateforme Microservices
-##Présentation du projet
+## Présentation du projet
 
 Collabify est une application de gestion de projets et de tâches collaboratives développée avec une architecture microservices basée sur Spring Boot et Spring Cloud.
 
-##Ce projet démontre :
+## Ce projet démontre :
 
 la décomposition en microservices
 la découverte de services (Eureka)
